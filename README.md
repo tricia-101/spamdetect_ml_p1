@@ -8,7 +8,7 @@ This project processes raw email text data, balances the dataset, handles NLP (N
 
 ---
 
-## 🚀 Key Features & Workflow
+## Key Features & Workflow
 
 ### 1. Data Cleaning & Preprocessing
 *   **Downsampling:** Automatically balances the dataset so there is an equal amount of spam and ham emails, preventing the model from becoming biased.
@@ -31,14 +31,14 @@ Built using **TensorFlow & Keras** with a Sequential layout:
 
 ---
 
-## 🛠️ Automated Training Optimization
+## Automated Training Optimization
 To keep training fast and prevent the model from memorizing data (overfitting), I integrated:
 *   **EarlyStopping:** Shuts down training if test accuracy stalls for 3 consecutive cycles and reverts back to the absolute best settings.
 *   **ReduceLROnPlateau:** Automatically shrinks the learning speed when progress slows down to perform precise fine-tuning.
 
 ---
 
-## 📦 Python Libraries Used
+## Python Libraries Used
 *   `tensorflow` (Deep Learning network management)
 *   `nltk` (Natural Language Toolkit for stopword dictionaries)
 *   `scikit-learn` (Data splitting and downsampling)
@@ -47,7 +47,7 @@ To keep training fast and prevent the model from memorizing data (overfitting), 
 
 ---
 
-## 📈 Next Steps & Goals
+## Next Steps & Goals
 As I continue to play around with this code, my next steps are to:
 1. Try increasing the maximum word sequence length past 100 to see if it catches longer spam emails.
 2. Build a custom input function where I can type a brand new sentence and have the AI guess if it is spam or ham in real-time.
